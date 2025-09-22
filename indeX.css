@@ -1,0 +1,43 @@
+/* Sidebar derecho */
+.sidebar-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contenedor de sugerencias de amigos fijo arriba */
+.sugerencias-amigos {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  position: sticky; /* Mantiene visible al hacer scroll */
+  top: 20px;        /* Distancia desde la parte superior */
+  z-index: 100;
+}
+
+/* Estilo de cada amigo */
+.friend-suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: #F0F2F5;
+}
+
+.friend-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friend-suggestion span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
